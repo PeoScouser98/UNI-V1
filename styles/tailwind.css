@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.menu-horizontal {
+		@apply sm:[&>li:hover]:border-b-4  sm:[&>li:hover]:border-primary  sm:[&>li>a:hover]:bg-transparent sm:[&>li>a]:h-12;
+	}
+	.drawer-toggle-btn {
+		@apply focus:[&+:where('#drawer')]:translate-x-0;
+	}
+	.invisible-scroll::-webkit-scrollbar {
+		@apply hidden;
+	}
+	.scroll {
+		@apply: w-1 [&: -webkit-scrollbar]: ;
+	}
+
+	.scroll::-webkit-scrollbar {
+		@apply mr-1 w-1 opacity-0;
+	}
+	.scroll::-webkit-scrollbar-track {
+		@apply w-[0.5rem];
+	}
+	.scroll::-webkit-scrollbar-thumb {
+		@apply rounded-full bg-gray-400/50;
+	}
+}
