@@ -156,11 +156,7 @@
 			];
 
 			const params = new URLSearchParams(window.location.search);
-			window.onload = () => {
-				if (!params.get("page")) {
-					params.set("page", sidebarItems[0].title);
-				}
-			};
+
 			const navLink = $("#nav-link");
 			if (navLink) {
 				navLink.innerHTML = sidebarItems
