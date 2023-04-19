@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-	.btn-outline{
-		@apply border-primary text-primary
+	.btn-outline {
+		@apply border-primary text-primary;
+	}
+	.menu {
+		@apply [&>li:focus:active]:border-b-4 [&>li:focus:active]:border-primary;
 	}
 	.menu-horizontal {
 		@apply [&>li:hover]:border-b-4  [&>li:hover]:border-primary [&>li>a:hover]:bg-transparent [&>li>a]:h-12;
@@ -16,14 +19,14 @@
 		@apply hidden;
 	}
 	.scroll {
-		@apply: w-1 [&: -webkit-scrollbar]: ;
+		@apply: w-2;
 	}
 
 	.scroll::-webkit-scrollbar {
-		@apply mr-1 w-1 opacity-0;
+		@apply mr-1 w-2 opacity-0;
 	}
 	.scroll::-webkit-scrollbar-track {
-		@apply w-[0.5rem];
+		@apply w-2;
 	}
 	.scroll::-webkit-scrollbar-thumb {
 		@apply rounded-full bg-gray-400/50;

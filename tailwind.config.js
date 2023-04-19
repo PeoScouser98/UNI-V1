@@ -32,5 +32,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [require("prettier-plugin-tailwindcss"), require("daisyui")],
+	plugins: [require("prettier-plugin-tailwindcss"), require("daisyui"), require("@tailwindcss/line-clamp")],
 };

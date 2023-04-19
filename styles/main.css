@@ -2921,17 +2921,23 @@ html {
   color: hsl(var(--p) / var(--tw-text-opacity));
 }
 
+.menu>li:focus:active {
+  border-bottom-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--p) / var(--tw-border-opacity));
+}
+
 .invisible-scroll::-webkit-scrollbar {
   display: none;
 }
 
 .scroll {
-  @apply: w-1 [&: -webkit-scrollbar]: ;
+  @apply: w-2;
 }
 
 .scroll::-webkit-scrollbar {
   margin-right: 0.25rem;
-  width: 0.25rem;
+  width: 0.5rem;
   opacity: 0;
 }
 
@@ -2951,6 +2957,20 @@ html {
 
 .mb-6 {
   margin-bottom: 1.5rem !important;
+}
+
+.line-clamp-2 {
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;
+}
+
+.line-clamp-3 {
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 3 !important;
 }
 
 .block {
@@ -2995,10 +3015,6 @@ html {
 
 .w-full {
   width: 100% !important;
-}
-
-.min-w-full {
-  min-width: 100% !important;
 }
 
 .max-w-\[60px\] {
@@ -3065,6 +3081,10 @@ html {
 
 .overflow-y-auto {
   overflow-y: auto !important;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden !important;
 }
 
 .truncate {
@@ -3196,6 +3216,20 @@ html {
 .text-base-content {
   --tw-text-opacity: 1 !important;
   color: hsl(var(--bc) / var(--tw-text-opacity)) !important;
+}
+
+.line-clamp-2 {
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;
+}
+
+.line-clamp-3 {
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 3 !important;
 }
 
 .hover\:btn:hover {
@@ -3649,7 +3683,17 @@ html {
 }
 
 @media (min-width: 1366px) {
+  .xl\:max-w-\[1200px\] {
+    max-width: 1200px !important;
+  }
+
   .xl\:justify-self-end {
     justify-self: end !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .xxl\:max-w-\[1440px\] {
+    max-width: 1440px !important;
   }
 }

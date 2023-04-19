@@ -11,68 +11,74 @@
 	</head>
 
 	<body>
-		<div class="invisible-scroll container mx-auto h-screen max-w-full overflow-y-auto bg-white xl:max-w-[1200px] xxl:max-w-[1440px] mx-auto">
+		<div class="invisible-scroll container h-screen max-w-full overflow-y-auto bg-white">
 			<!-- header -->
-			<header class="navbar items-stretch bg-base-100 p-2 sm:flex-col sm:items-stretch sm:gap-2">
-				<!-- nav start -->
-				<div class="navbar-start">
-					<div class="flex flex-none items-center gap-2">
-						<img src="./public/LOGO.svg" alt="logo" class="aspect-square max-w-[60px] object-contain" />
-						<div class="flex w-full flex-col gap-1">
-							<b class="block text-lg sm:text-base">University of Illinois Urbana Champaign</b>
-							<span class="inline-flex items-center gap-2">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke-width="1.5"
-									stroke="currentColor"
-									class="h-6 w-6"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-									/>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-									/>
-								</svg>
-								<span class="sm:text-sm"> URBANA, Illinois, USA</span>
-							</span>
+			<header class="mx-auto bg-base-100 p-2 xl:max-w-[1200px] xxl:max-w-[1440px]">
+				<nav class="navbar items-stretch sm:flex-col sm:items-stretch sm:gap-2">
+					<!-- nav start -->
+					<div class="navbar-start">
+						<div class="flex flex-none items-center gap-2">
+							<img src="./public/LOGO.svg" alt="logo" class="aspect-square max-w-[60px] object-contain" />
+							<div class="flex w-full flex-col gap-1">
+								<b class="block text-lg sm:text-base">University of Illinois Urbana Champaign</b>
+								<span class="inline-flex items-center gap-2">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="currentColor"
+										class="h-6 w-6"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+										/>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+										/>
+									</svg>
+									<span class="sm:text-sm"> URBANA, Illinois, USA</span>
+								</span>
+							</div>
 						</div>
 					</div>
-				</div>
-				<!-- nav end -->
-				<div class="navbar-end sm:w-full">
-					<div class="grid  sm:min-w-full grid-cols-2 gap-2">
-						<a href="#" class="btn-outline btn capitalize hover:btn">Ask Us</a>
-						<a href="#" class="btn-primary btn capitalize">Apply Now</a>
+					<!-- nav end -->
+					<div class="navbar-end sm:w-full">
+						<div class="grid grid-cols-2 gap-2 sm:min-w-full">
+							<a href="#" class="btn-outline btn capitalize hover:btn">Ask Us</a>
+							<a href="#" class="btn-primary btn capitalize">Apply Now</a>
+						</div>
 					</div>
-				</div>
+				</nav>
 			</header>
 
 			<!-- page content -->
-			<main
-				class="flex h-full items-stretch bg-gradient-to-br from-white via-[#CFEEFF80]/50 to-[#FCEFEE] sm:flex-col md:flex-col"
-			>
-				<!-- outlet component -->
-				<div class="invisible-scroll h-auto w-full p-2 sm:my-6 sm:overflow-x-auto md:my-6 md:overflow-x-auto">
-					<ul
-						class="menu menu-vertical font-clash text-xl font-medium sm:menu-horizontal md:menu-horizontal sm:text-base"
-						id="nav-link"
-					></ul>
-				</div>
+			<main class="h-full bg-gradient-to-br from-white via-[#CFEEFF80]/50 to-[#FCEFEE]">
+				<div
+					class="scroll mx-auto flex h-full items-stretch overflow-y-auto p-2 sm:flex-col md:flex-col xl:max-w-[1200px] xxl:max-w-[1440px]"
+				>
+					<!-- outlet component -->
+					<div class="invisible-scroll h-auto w-full p-2 sm:my-6 sm:overflow-x-auto md:my-6 md:overflow-x-auto">
+						<ul
+							class="menu menu-vertical font-clash text-xl font-medium sm:menu-horizontal md:menu-horizontal sm:text-base"
+							id="nav-link"
+						></ul>
+					</div>
 
-				<div class="scroll h-full overflow-y-auto p-3">
-					<!-- Page content here -->
-					<h3 class="mb-6 font-clash text-3xl font-extrabold sm:text-2xl">News</h3>
-					<div
-						id="post-list"
-						class="mx-auto grid max-w-full grid-cols-3 items-start gap-6 sm:grid-cols-1 md:grid-cols-2"
-					></div>
+					<div class="scroll h-full overflow-y-auto overflow-x-hidden p-3">
+						<!-- Page content here -->
+						<h3 class="mb-6 font-clash text-3xl font-extrabold sm:text-2xl">News</h3>
+						<div
+							id="post-list"
+							class="mx-auto grid max-w-full grid-cols-3 items-start gap-6 sm:grid-cols-1 md:grid-cols-2"
+						>
+							<!-- post list -->
+						</div>
+					</div>
 				</div>
 			</main>
 
@@ -176,9 +182,9 @@
 									</figure>
 									<div class="card-body w-full px-0 py-2">
 										<div class="tooltip" data-tip="${post.title}">
-											<a href="#" class="font-bold text-xl truncate w-full text-left block first-letter:uppercase">${post.title}</a>
+											<a href="#" class="font-bold text-xl w-full text-left block first-letter:uppercase  line-clamp-2">${post.title}</a>
 										</div>
-										<p class="truncate w-full">${post.body}</p>
+										<p class=" w-full line-clamp-3">${post.body}</p>
 									</div>
 								</div>
 							
