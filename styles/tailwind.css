@@ -6,6 +6,9 @@
 	.btn-outline {
 		@apply border-primary text-primary;
 	}
+	.nav-link-active {
+		@apply text-base-content sm:border-b-4 sm:border-b-primary md:border-b-4 md:border-b-primary xl:border-l-4 xl:border-l-primary;
+	}
 	.menu {
 		@apply [&>li:focus:active]:border-b-4 [&>li:focus:active]:border-primary;
 	}

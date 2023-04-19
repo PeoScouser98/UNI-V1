@@ -2921,6 +2921,35 @@ html {
   color: hsl(var(--p) / var(--tw-text-opacity));
 }
 
+.nav-link-active {
+  --tw-text-opacity: 1;
+  color: hsl(var(--bc) / var(--tw-text-opacity));
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .nav-link-active {
+    border-bottom-width: 4px;
+    --tw-border-opacity: 1;
+    border-bottom-color: hsl(var(--p) / var(--tw-border-opacity));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav-link-active {
+    border-bottom-width: 4px;
+    --tw-border-opacity: 1;
+    border-bottom-color: hsl(var(--p) / var(--tw-border-opacity));
+  }
+}
+
+@media (min-width: 1366px) {
+  .nav-link-active {
+    border-left-width: 4px;
+    --tw-border-opacity: 1;
+    border-left-color: hsl(var(--p) / var(--tw-border-opacity));
+  }
+}
+
 .menu>li:focus:active {
   border-bottom-width: 4px;
   --tw-border-opacity: 1;
@@ -3104,10 +3133,6 @@ html {
   background-color: hsl(var(--b1) / var(--tw-bg-opacity)) !important;
 }
 
-.bg-base-content\/10 {
-  background-color: hsl(var(--bc) / 0.1) !important;
-}
-
 .bg-transparent {
   background-color: transparent !important;
 }
@@ -3219,6 +3244,11 @@ html {
 .text-zinc-500 {
   --tw-text-opacity: 1 !important;
   color: rgb(113 113 122 / var(--tw-text-opacity)) !important;
+}
+
+.text-zinc-400 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(161 161 170 / var(--tw-text-opacity)) !important;
 }
 
 .line-clamp-2 {
@@ -3594,8 +3624,8 @@ html {
     display: none !important;
   }
 
-  .sm\:h-\[48px\] {
-    height: 48px !important;
+  .sm\:h-12 {
+    height: 3rem !important;
   }
 
   .sm\:w-full {
@@ -3628,15 +3658,6 @@ html {
 
   .sm\:overflow-x-auto {
     overflow-x: auto !important;
-  }
-
-  .sm\:border-b-4 {
-    border-bottom-width: 4px !important;
-  }
-
-  .sm\:border-b-primary {
-    --tw-border-opacity: 1 !important;
-    border-bottom-color: hsl(var(--p) / var(--tw-border-opacity)) !important;
   }
 
   .sm\:text-left {
@@ -3689,15 +3710,6 @@ html {
 
   .xl\:justify-self-end {
     justify-self: end !important;
-  }
-
-  .xl\:border-l-4 {
-    border-left-width: 4px !important;
-  }
-
-  .xl\:border-l-primary {
-    --tw-border-opacity: 1 !important;
-    border-left-color: hsl(var(--p) / var(--tw-border-opacity)) !important;
   }
 }
 
