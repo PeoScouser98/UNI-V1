@@ -58,7 +58,8 @@
 			<main
 				class="flex h-full items-stretch bg-gradient-to-br from-white via-[#CFEEFF80]/50 to-[#FCEFEE] sm:flex-col md:flex-col"
 			>
-				<div class="invisible-scroll h-auto w-full p-2 sm:overflow-x-auto md:overflow-x-auto">
+				<!-- outlet component -->
+				<div class="invisible-scroll h-auto w-full p-2 sm:my-6 sm:overflow-x-auto md:overflow-x-auto">
 					<ul
 						class="menu menu-vertical font-clash text-xl font-medium sm:menu-horizontal md:menu-horizontal sm:text-base"
 						id="nav-link"
@@ -67,7 +68,7 @@
 
 				<div class="scroll h-full overflow-y-auto p-3">
 					<!-- Page content here -->
-					<h3 class="mb-6 font-clash text-2xl font-extrabold">News</h3>
+					<h3 class="mb-6 font-clash text-3xl font-extrabold sm:text-2xl">News</h3>
 					<div
 						id="post-list"
 						class="mx-auto grid max-w-full grid-cols-3 items-start gap-6 sm:grid-cols-1 md:grid-cols-2"
@@ -155,7 +156,7 @@
 				navLink.innerHTML = sidebarItems
 					.map(
 						(item) => /* html */ `
-                        <li class="xl:hover-bordered"><a href="${item.link}">${item.title}</a></li>
+                        <li class="xl:hover-bordered sm:h-[48px]"><a href="${item.link}">${item.title}</a></li>
                     `
 					)
 					.join("");
@@ -168,16 +169,22 @@
 						postList.innerHTML = postsData
 							.map(
 								(post) => /*html*/ `
-						<div class="card bg-transparent p-0 w-full">
-							<figure>
-								<img src="https://picsum.photos/300/200" alt="Shoes" class="rounded-xl w-full" />
-							</figure>
-							<div class="card-body w-full px-0 py-2">
-								<h2 class="card-title truncate w-full">${post.title}</h2>
-								<p class="truncate w-full">${post.body}</p>
-							</div>
-						</div>
-						`
+						
+								<div class="card bg-transparent p-0 w-full">
+									<figure>
+										<a href="#" class="w-full">
+											<img src="https://picsum.photos/300/200" alt="Shoes" class="rounded-xl w-full" loading="lazy" />
+										</a>
+									</figure>
+									<div class="card-body w-full px-0 py-2">
+										<div class="tooltip" data-tip="${post.title}">
+											<a href="#" class="font-bold text-xl truncate w-full text-left block first-letter:uppercase">${post.title}</a>
+										</div>
+										<p class="truncate w-full">${post.body}</p>
+									</div>
+								</div>
+							
+									`
 							)
 							.join("");
 					}
