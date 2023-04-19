@@ -11,9 +11,9 @@
 	</head>
 
 	<body>
-		<div class="invisible-scroll container mx-auto h-screen max-w-full overflow-y-auto">
+		<div class="invisible-scroll container mx-auto h-screen max-w-full overflow-y-auto bg-white">
 			<!-- header -->
-			<header class="navbar items-stretch bg-base-100 p-2 sm:flex-col sm:gap-2">
+			<header class="navbar items-stretch bg-base-100 p-2 sm:flex-col sm:items-stretch sm:gap-2">
 				<!-- nav start -->
 				<div class="navbar-start">
 					<div class="flex flex-none items-center gap-2">
@@ -47,9 +47,9 @@
 				</div>
 				<!-- nav end -->
 				<div class="navbar-end sm:w-full">
-					<div class="flex items-center gap-2 sm:flex-1 sm:justify-between sm:px-2">
-						<a href="#" class="btn-outline btn capitalize hover:btn sm:basis-1/2">Ask Us</a>
-						<a href="#" class="btn-primary btn capitalize sm:basis-1/2">Apply Now</a>
+					<div class="grid  sm:min-w-full grid-cols-2 gap-2">
+						<a href="#" class="btn-outline btn capitalize hover:btn">Ask Us</a>
+						<a href="#" class="btn-primary btn capitalize">Apply Now</a>
 					</div>
 				</div>
 			</header>
@@ -59,7 +59,7 @@
 				class="flex h-full items-stretch bg-gradient-to-br from-white via-[#CFEEFF80]/50 to-[#FCEFEE] sm:flex-col md:flex-col"
 			>
 				<!-- outlet component -->
-				<div class="invisible-scroll h-auto w-full p-2 sm:my-6 sm:overflow-x-auto md:overflow-x-auto">
+				<div class="invisible-scroll h-auto w-full p-2 sm:my-6 sm:overflow-x-auto md:my-6 md:overflow-x-auto">
 					<ul
 						class="menu menu-vertical font-clash text-xl font-medium sm:menu-horizontal md:menu-horizontal sm:text-base"
 						id="nav-link"
@@ -77,12 +77,14 @@
 			</main>
 
 			<!-- footer -->
-			<footer class="footer items-center border-t border-zinc-400/50 bg-base-100 p-4 text-base-content">
-				<div class="flex items-center gap-2 text-center">
+			<footer
+				class="footer items-center border-t border-zinc-400/50 bg-base-100 p-4 text-base-content sm:flex-col sm:text-left"
+			>
+				<div class="flex items-center gap-2 sm:flex-col sm:items-start">
 					<p>© 2022 EasyUni All rights reserved</p>
-					<div class="select-none">•</div>
+					<div class="select-none sm:hidden">•</div>
 					<a class="hover:link" href="#">Privacy</a>
-					<div class="select-none">•</div>
+					<div class="select-none sm:hidden">•</div>
 					<a class="hover:link" href="#">Terms</a>
 				</div>
 				<div class="grid-flow-col gap-4 md:place-self-center xl:justify-self-end">
