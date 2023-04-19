@@ -48,11 +48,7 @@
 				<!-- nav end -->
 				<div class="navbar-end sm:w-full">
 					<div class="flex items-center gap-2 sm:flex-1 sm:justify-between sm:px-2">
-						<a
-							href="#"
-							class="btn-outline btn border-primary capitalize text-primary hover:border-none hover:text-base-100 sm:basis-1/2"
-							>Ask Us</a
-						>
+						<a href="#" class="btn-outline btn capitalize hover:btn-success sm:basis-1/2">Ask Us</a>
 						<a href="#" class="btn-primary btn capitalize sm:basis-1/2">Apply Now</a>
 					</div>
 				</div>
@@ -74,7 +70,7 @@
 					<h3 class="mb-6 font-clash text-2xl font-extrabold">News</h3>
 					<div
 						id="post-list"
-						class="mx-auto grid max-w-full grid-cols-3 items-start gap-3 sm:grid-cols-1 md:grid-cols-2"
+						class="mx-auto grid max-w-full grid-cols-3 items-start gap-6 sm:grid-cols-1 md:grid-cols-2"
 					></div>
 				</div>
 			</main>
@@ -177,7 +173,7 @@
 								<img src="https://picsum.photos/300/200" alt="Shoes" class="rounded-xl w-full" />
 							</figure>
 							<div class="card-body w-full px-0 py-2">
-								<h2 class="card-title">${post.title}</h2>
+								<h2 class="card-title truncate w-full">${post.title}</h2>
 								<p class="truncate w-full">${post.body}</p>
 							</div>
 						</div>

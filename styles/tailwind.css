@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+	.btn-outline{
+		@apply border-primary text-primary
+	}
 	.menu-horizontal {
 		@apply sm:[&>li:hover]:border-b-4  sm:[&>li:hover]:border-primary  sm:[&>li>a:hover]:bg-transparent sm:[&>li>a]:h-12;
 	}
