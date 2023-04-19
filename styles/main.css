@@ -3087,12 +3087,6 @@ html {
   overflow-x: hidden !important;
 }
 
-.truncate {
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  white-space: nowrap !important;
-}
-
 .rounded-xl {
   border-radius: 0.75rem !important;
 }
@@ -3108,6 +3102,10 @@ html {
 .bg-base-100 {
   --tw-bg-opacity: 1 !important;
   background-color: hsl(var(--b1) / var(--tw-bg-opacity)) !important;
+}
+
+.bg-base-content\/10 {
+  background-color: hsl(var(--bc) / 0.1) !important;
 }
 
 .bg-transparent {
@@ -3216,6 +3214,11 @@ html {
 .text-base-content {
   --tw-text-opacity: 1 !important;
   color: hsl(var(--bc) / var(--tw-text-opacity)) !important;
+}
+
+.text-zinc-500 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(113 113 122 / var(--tw-text-opacity)) !important;
 }
 
 .line-clamp-2 {
@@ -3577,18 +3580,6 @@ html {
   }
 }
 
-@media (min-width: 1366px) {
-  .menu li.xl\:hover-bordered a {
-    border-left-width: 4px;
-    border-color: transparent;
-  }
-
-  .menu li.xl\:hover-bordered a:hover {
-    --tw-border-opacity: 1;
-    border-color: hsl(var(--p) / var(--tw-border-opacity));
-  }
-}
-
 .first-letter\:uppercase::first-letter {
   text-transform: uppercase !important;
 }
@@ -3637,6 +3628,15 @@ html {
 
   .sm\:overflow-x-auto {
     overflow-x: auto !important;
+  }
+
+  .sm\:border-b-4 {
+    border-bottom-width: 4px !important;
+  }
+
+  .sm\:border-b-primary {
+    --tw-border-opacity: 1 !important;
+    border-bottom-color: hsl(var(--p) / var(--tw-border-opacity)) !important;
   }
 
   .sm\:text-left {
@@ -3689,6 +3689,15 @@ html {
 
   .xl\:justify-self-end {
     justify-self: end !important;
+  }
+
+  .xl\:border-l-4 {
+    border-left-width: 4px !important;
+  }
+
+  .xl\:border-l-primary {
+    --tw-border-opacity: 1 !important;
+    border-left-color: hsl(var(--p) / var(--tw-border-opacity)) !important;
   }
 }
 

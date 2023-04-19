@@ -64,7 +64,7 @@
 					<!-- outlet component -->
 					<div class="invisible-scroll h-auto w-full p-2 sm:my-6 sm:overflow-x-auto md:my-6 md:overflow-x-auto">
 						<ul
-							class="menu menu-vertical font-clash text-xl font-medium sm:menu-horizontal md:menu-horizontal sm:text-base"
+							class="menu menu-vertical gap-1 font-clash text-xl font-medium text-zinc-500 sm:menu-horizontal md:menu-horizontal sm:text-base"
 							id="nav-link"
 						></ul>
 					</div>
@@ -138,7 +138,7 @@
 					link: "#",
 				},
 				{
-					title: "Campus ",
+					title: "Campus",
 					link: "#",
 				},
 				{
@@ -155,16 +155,35 @@
 				},
 			];
 
+			const params = new URLSearchParams(window.location.search);
+			window.onload = () => {
+				if (!params.get("page")) {
+					params.set("page", sidebarItems[0].title);
+				}
+			};
 			const navLink = $("#nav-link");
 			if (navLink) {
 				navLink.innerHTML = sidebarItems
 					.map(
 						(item) => /* html */ `
-                        <li class="xl:hover-bordered sm:h-[48px]"><a href="${item.link}">${item.title}</a></li>
-                    `
+							<li class="sm:h-[48px] link-item ${
+								params.get("page") === item.title
+									? "xl:border-l-4 xl:border-l-primary sm:border-b-4 sm:border-b-primary bg-base-content/10"
+									: ""
+							}" data-page="${item.title}"><a>${item.title}</a></li>
+						                 `
 					)
 					.join("");
 			}
+
+			$(".link-item").forEach(
+				(item) =>
+					(item.onclick = () => {
+						params.set("page", item.dataset.page);
+						window.location.search = params;
+					})
+			);
+
 			(async () => {
 				try {
 					const postsData = await (await fetch(instance.baseURL)).json();
@@ -173,22 +192,22 @@
 						postList.innerHTML = postsData
 							.map(
 								(post) => /*html*/ `
-						
-								<div class="card bg-transparent p-0 w-full">
-									<figure>
-										<a href="#" class="w-full">
-											<img src="https://picsum.photos/300/200" alt="Shoes" class="rounded-xl w-full" loading="lazy" />
-										</a>
-									</figure>
-									<div class="card-body w-full px-0 py-2">
-										<div class="tooltip" data-tip="${post.title}">
-											<a href="#" class="font-bold text-xl w-full text-left block first-letter:uppercase  line-clamp-2">${post.title}</a>
-										</div>
-										<p class=" w-full line-clamp-3">${post.body}</p>
-									</div>
-								</div>
-							
-									`
+
+											<div class="card bg-transparent p-0 w-full">
+												<figure>
+													<a href="#" class="w-full">
+														<img src="https://picsum.photos/300/200" alt="Shoes" class="rounded-xl w-full" loading="lazy" />
+													</a>
+												</figure>
+												<div class="card-body w-full px-0 py-2">
+													<div class="tooltip" data-tip="${post.title}">
+														<a href="#" class="font-bold text-xl w-full text-left block first-letter:uppercase line-clamp-2">${post.title}</a>
+													</div>
+													<p class=" w-full line-clamp-3">${post.body}</p>
+												</div>
+											</div>
+
+												`
 							)
 							.join("");
 					}
