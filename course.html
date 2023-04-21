@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+		<link href="https://fonts.cdnfonts.com/css/chillax" rel="stylesheet" />
+	</head>
+
+	<body class="font-sans">
+		<div class="mx-auto max-w-full">
+			<div class="mx-auto max-w-7xl">
+				<!-- Header -->
+				<header class="bg-white">
+					<div class="flex flex-col gap-6 px-4 sm:px-6 lg:px-8">
+						<!-- header top -->
+						<nav>
+							<div class="flex h-16 items-center justify-between">
+								<!-- navbar logo -->
+								<div class="flex">
+									<div class="flex flex-shrink-0 items-center">
+										<a href="#" class="font-chillax text-4xl font-bold"
+											>e<span class="text-indigo-500">a</span>syuni</a
+										>
+									</div>
+								</div>
+								<!-- navbar menu -->
+								<div class="flex items-center justify-center gap-6 sm:hidden md:hidden">
+									<!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
+									<a
+										href="#"
+										class="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
+										aria-current="page"
+										>Guides</a
+									>
+									<a
+										href="#"
+										class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+										>Universities</a
+									>
+									<a
+										href="#"
+										class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+										>Courses</a
+									>
+									<a
+										href="#"
+										class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+										>Online postgrad courses</a
+									>
+									<a
+										href="#"
+										class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+										>More</a
+									>
+								</div>
+								<!-- navbar end -->
+								<div class="items-center gap-3 sm:hidden md:hidden xl:flex">
+									<button
+										type="button"
+										class="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+									>
+										<span class="sr-only">View notifications</span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="h-6 w-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+											/>
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+									>
+										<span class="sr-only">View notifications</span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="h-6 w-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
+											/>
+										</svg>
+									</button>
+									<button
+										type="button"
+										class="rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+									>
+										Speak Advisor
+									</button>
+									<span>For Universities</span>
+								</div>
+								<!-- navbar end mobile -->
+								<div class="items-center gap-2 sm:flex xl:hidden">
+									<!-- Search button -->
+									<button type="button" class="btn btn-circle btn-ghost">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="h-6 w-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+											/>
+										</svg>
+									</button>
+									<!-- Mobile menu button -->
+									<label id="drawer-toggle-btn" for="drawer-toggle" type="button" class="btn btn-circle btn-ghost">
+										<span class="sr-only">Open main menu</span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="h-6 w-6"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+											/>
+										</svg>
+									</label>
+								</div>
+							</div>
+						</nav>
+						<!-- breadscrumb -->
+						<nav class="flex" aria-label="Breadcrumb">
+							<ol role="list" class="flex items-center space-x-4">
+								<li>
+									<div>
+										<a href="#" class="text-gray-400 hover:text-gray-500">
+											<svg
+												class="h-5 w-5 flex-shrink-0"
+												viewBox="0 0 20 20"
+												fill="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+											<span class="sr-only">Home</span>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="flex items-center">
+										<svg
+											class="h-5 w-5 flex-shrink-0 text-gray-300"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+											aria-hidden="true"
+										>
+											<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+										</svg>
+										<a href="#" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"
+											>Projects</a
+										>
+									</div>
+								</li>
+								<li>
+									<div class="flex items-center">
+										<svg
+											class="h-5 w-5 flex-shrink-0 text-gray-300"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+											aria-hidden="true"
+										>
+											<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+										</svg>
+										<a
+											href="#"
+											class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"
+											aria-current="page"
+											>Project Nero</a
+										>
+									</div>
+								</li>
+							</ol>
+						</nav>
+					</div>
+				</header>
+
+				<!-- Page content -->
+
+				<main class="px-4 py-10">
+					<div class="flex flex-col gap-6">
+						<!-- Course list -->
+						<section>
+							<h1 class="mb-6 font-clash text-3xl font-semibold">Comparing courses</h1>
+							<div class="invisible-scroll w-full overflow-x-auto">
+								<div class="flex min-w-fit items-stretch justify-around gap-4" id="course-list">
+									<!-- Course list items -->
+								</div>
+							</div>
+						</section>
+
+						<!-- Course info -->
+						<section>
+							<!-- table action -->
+							<fieldset class="mb-6">
+								<legend class="sr-only">Notifications</legend>
+								<div class="space-y-5">
+									<div class="relative flex items-start">
+										<div class="flex h-6 items-center">
+											<input
+												id="comments"
+												aria-describedby="comments-description"
+												name="comments"
+												type="checkbox"
+												class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+											/>
+										</div>
+										<div class="ml-3 text-sm leading-6">
+											<label for="comments" class="font-medium text-gray-900">Only show differences</label>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<!-- course info table -->
+							<div class="overflow-x-auto bg-gradient-to-t from-blue-100/50 to-white">
+								<table class="table" id="course-table"></table>
+							</div>
+						</section>
+					</div>
+				</main>
+			</div>
+
+			<!-- footer -->
+			<footer
+				class="flex items-center justify-between gap-6 border-t border-gray-400/50 p-3 sm:flex-col-reverse sm:items-start"
+			>
+				<div class="flex items-center gap-1 sm:flex-col sm:items-start">
+					<p>© 2022 EasyUni All rights reserved</p>
+					<div class="select-none sm:hidden">•</div>
+					<a class="hover:link" href="#">Privacy</a>
+					<div class="select-none sm:hidden">•</div>
+					<a class="hover:link" href="#">Terms</a>
+				</div>
+
+				<div class="inline-flex items-center gap-2">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="h-6 w-6"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
+						/>
+					</svg>
+					Support & Resources
+				</div>
+			</footer>
+
+			<!-- drawer -->
+			<input type="checkbox" class="drawer-toggle" id="drawer-toggle" />
+			<label for="drawer-toggle" class="drawer-overlay" id="drawer-overlay"></label>
+			<div class="drawer-content" id="drawer-menu">
+				<ul class="menu">
+					<li><a href="#">Guides</a></li>
+					<li><a href="#">Universities</a></li>
+					<li><a href="#">Courses</a></li>
+					<li><a href="#">Online postgrad courses</a></li>
+					<li><a href="#">More</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<script type="module">
+			import { $, formatCurrency } from "./util.js";
+			import { courseListData } from "./mocks/course.js";
+
+			const courseList = document.querySelector("#course-list");
+			const courseInfoTable = document.querySelector("#course-table");
+			const drawerButton = document.querySelector("#drawer-toggle-btn");
+			const drawerMenu = document.querySelector("#drawer");
+
+			// render course list
+			if (courseList) {
+				courseList.innerHTML = courseListData
+					.map(
+						(course) => /*html*/ `
+						<div class="relative flex items-start flex-grow w-[14rem]  aspect-[1,1.5] flex-col gap-4 rounded-2xl bg-gray-100 p-4 basis-full">
+							<button class="btn btn-circle absolute right-2 top-2 shadow-xl hover:bg-gray-300">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="h-6 w-6"
+								>
+									<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+								</svg>
+							</button>
+							<!-- card image -->
+							<div class="mb-6 flex flex-col gap-2 basis-1/6">
+								<img src="${course.icon}" alt="course icon" class="max-w-[48px] rounded-md object-cover" loading='lazy' />
+								<small class="text-gray-500 line-clamp-1">${course.location}</small>
+							</div>
+							<!-- card title -->
+							<h2 class="mb-4 font-medium line-clamp-2 basis-1/2">
+								${course.courseName}
+							</h2>
+							<!-- card action -->
+							<div class="justify-self-end w-full">
+								<button
+									type="button"
+									class="btn btn-outline block w-full ring-indigo-500 text-indigo-500 hover:text-white hover:ring-0 hover:bg-indigo-500"
+								>
+									Apply
+								</button>
+							</div>
+						</div>
+			`
+					)
+					.join("");
+			}
+
+			// render course table
+			if (courseInfoTable) {
+				const courseInfo = courseListData.reduce(
+					(acc, cur) => {
+						acc.qualification.push(cur.qualification);
+						acc["tuition fee (local students)"].push(formatCurrency(cur.feeForLocalStudent));
+						acc["tuition fee (foreign students)"].push(formatCurrency(cur.feeForForeignStudent));
+						acc.duration.push(cur.duration);
+						acc.intake.push(cur.intake);
+						acc["study mode"].push(cur.studyMode);
+
+						return acc;
+					},
+					{
+						qualification: [],
+						"study mode": [],
+						duration: [],
+						intake: [],
+						"tuition fee (local students)": [],
+						"tuition fee (foreign students)": [],
+					}
+				);
+
+				courseInfoTable.innerHTML = Object.keys(courseInfo)
+					.map((key) => {
+						key;
+						return /*html*/ `
+									<tr>
+										<th colspan="5" class="bg-gray-100 p-3 text-left first-letter:uppercase">${key}</th>
+									</tr>
+									<tr>
+										${courseInfo[key]
+											.map(
+												(info) => /*html*/ `
+												<td class="">
+													${
+														Array.isArray(info) && key === "intake"
+															? info.map((item) => `<span class="badge">${item}</span>`).join("")
+															: `<span>${info}</span>`
+													}
+												</td>`
+											)
+											.join("")}
+									</tr>
+									`;
+					})
+					.join("");
+			}
+			const closePanelButton = document.querySelector("#close-panel-btn");
+
+			closePanelButton.onclick = () => {
+				drawerMenu.classList.add("translate-x-full");
+			};
+			drawerButton.addEventListener("click", () => {
+				console.log(1);
+				console.log(drawerMenu);
+				if (drawerMenu) {
+					drawerMenu.classList.remove("translate-x-full");
+					drawerMenu.classList.add("translate-x-0");
+				}
+			});
+		</script>
+	</body>
+</html>

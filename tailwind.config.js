@@ -1,4 +1,7 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
 	content: ["*.{html,js}"],
 	important: true,
@@ -27,10 +30,11 @@ module.exports = {
 		},
 		extend: {
 			fontFamily: {
-				sans: ["Inter var"],
+				sans: ["Inter var", ...defaultTheme.fontFamily.sans],
 				clash: ["Clash Display", "sans-serif"],
+				chillax: ["Chillax"],
 			},
 		},
 	},
-	plugins: [require("prettier-plugin-tailwindcss"), require("daisyui"), require("@tailwindcss/line-clamp")],
+	plugins: [require("prettier-plugin-tailwindcss"), require("@tailwindcss/line-clamp")],
 };

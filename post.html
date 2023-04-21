@@ -6,51 +6,49 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Uni</title>
 		<link rel="stylesheet" href="./styles/main.css" />
-		<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-		<link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet" />
 	</head>
 
 	<body>
 		<div class="invisible-scroll container h-screen max-w-full overflow-y-auto bg-white">
 			<!-- header -->
-			<header class="mx-auto bg-base-100 p-2 xl:max-w-[1200px] xxl:max-w-[1440px]">
-				<nav class="navbar items-stretch sm:flex-col sm:items-stretch sm:gap-2">
+			<header class="bg-base-100 mx-auto p-2 xl:max-w-[1200px] xxl:max-w-[1440px]">
+				<nav class="flex items-stretch justify-between sm:flex-col sm:items-stretch sm:gap-2">
 					<!-- nav start -->
-					<div class="navbar-start">
-						<div class="flex flex-none items-center gap-2">
-							<img src="./public/LOGO.svg" alt="logo" class="aspect-square max-w-[60px] object-contain" />
-							<div class="flex w-full flex-col gap-1">
-								<b class="block text-lg sm:text-base">University of Illinois Urbana Champaign</b>
-								<span class="inline-flex items-center gap-2">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke-width="1.5"
-										stroke="currentColor"
-										class="h-6 w-6"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-										/>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-										/>
-									</svg>
-									<span class="sm:text-sm"> URBANA, Illinois, USA</span>
-								</span>
-							</div>
+
+					<div class="flex flex-none items-center gap-2">
+						<img src="./public/urbana.svg" alt="logo" class="aspect-square max-w-[60px] object-contain" />
+						<div class="flex w-full flex-col gap-1">
+							<b class="block text-lg sm:text-base">University of Illinois Urbana Champaign</b>
+							<span class="inline-flex items-center gap-2">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="h-6 w-6"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+									/>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+									/>
+								</svg>
+								<span class="sm:text-sm"> URBANA, Illinois, USA</span>
+							</span>
 						</div>
 					</div>
+
 					<!-- nav end -->
-					<div class="navbar-end sm:w-full">
+					<div class="sm:w-full">
 						<div class="grid grid-cols-2 gap-2 sm:min-w-full">
-							<a href="#" class="btn-outline btn capitalize hover:btn">Ask Us</a>
-							<a href="#" class="btn-primary btn capitalize">Apply Now</a>
+							<a href="#" class="btn btn-outline capitalize hover:text-white">Ask Us</a>
+							<a href="#" class="btn btn-primary capitalize hover:bg-indigo-600">Apply Now</a>
 						</div>
 					</div>
 				</nav>
@@ -61,10 +59,9 @@
 				<div
 					class="scroll mx-auto flex h-full items-stretch overflow-y-auto p-2 sm:flex-col md:flex-col xl:max-w-[1200px] xxl:max-w-[1440px]"
 				>
-					<!-- outlet component -->
 					<div class="invisible-scroll h-auto w-full p-2 sm:my-6 sm:overflow-x-auto md:my-6 md:overflow-x-auto">
 						<ul
-							class="menu menu-vertical gap-1 font-clash text-xl font-medium text-zinc-400 sm:menu-horizontal md:menu-horizontal sm:text-base"
+							class="menu menu-vertical sm:menu-horizontal md:menu-horizontal gap-1 font-clash text-xl font-medium text-zinc-400 sm:text-base"
 							id="nav-link"
 						></ul>
 					</div>
@@ -82,47 +79,41 @@
 				</div>
 			</main>
 
-			<!-- footer -->
 			<footer
-				class="footer items-center border-t border-zinc-400/50 bg-base-100 p-4 text-base-content sm:flex-col sm:text-left"
+				class="flex items-center justify-between gap-6 border-t border-gray-400/50 p-3 sm:flex-col-reverse sm:items-start"
 			>
-				<div class="flex items-center gap-2 sm:flex-col sm:items-start">
+				<div class="flex items-center gap-1 sm:flex-col sm:items-start">
 					<p>© 2022 EasyUni All rights reserved</p>
 					<div class="select-none sm:hidden">•</div>
 					<a class="hover:link" href="#">Privacy</a>
 					<div class="select-none sm:hidden">•</div>
 					<a class="hover:link" href="#">Terms</a>
 				</div>
-				<div class="grid-flow-col gap-4 md:place-self-center xl:justify-self-end">
-					<div class="inline-flex items-center gap-2">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							class="h-6 w-6"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
-							/>
-						</svg>
-						Support & Resources
-					</div>
+
+				<div class="inline-flex items-center gap-2">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="h-6 w-6"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
+						/>
+					</svg>
+					Support & Resources
 				</div>
 			</footer>
 		</div>
 
-		<script>
+		<script type="module">
+			import { $ } from "./util.js";
 			const instance = {
 				baseURL: "https://jsonplaceholder.typicode.com/posts",
-			};
-
-			const $ = (selector) => {
-				const elements = document.querySelectorAll(selector);
-				return elements.length === 1 ? elements[0] : elements;
 			};
 
 			let menuData = [
