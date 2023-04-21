@@ -301,10 +301,9 @@
 			import { $, formatCurrency } from "./util.js";
 			import { courseListData } from "./mocks/course.js";
 
-			const courseList = document.querySelector("#course-list");
-			const courseInfoTable = document.querySelector("#course-table");
-			const drawerButton = document.querySelector("#drawer-toggle-btn");
-			const drawerMenu = document.querySelector("#drawer");
+			const courseList = $("#course-list");
+			const courseInfoTable = $("#course-table");
+			
 
 			// render course list
 			if (courseList) {
@@ -396,19 +395,7 @@
 					})
 					.join("");
 			}
-			const closePanelButton = document.querySelector("#close-panel-btn");
-
-			closePanelButton.onclick = () => {
-				drawerMenu.classList.add("translate-x-full");
-			};
-			drawerButton.addEventListener("click", () => {
-				console.log(1);
-				console.log(drawerMenu);
-				if (drawerMenu) {
-					drawerMenu.classList.remove("translate-x-full");
-					drawerMenu.classList.add("translate-x-0");
-				}
-			});
+			
 		</script>
 	</body>
 </html>
