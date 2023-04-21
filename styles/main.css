@@ -1039,6 +1039,10 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
 }
 
+.flex-row{
+  flex-direction: row !important;
+}
+
 .flex-col{
   flex-direction: column !important;
 }
