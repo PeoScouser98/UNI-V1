@@ -20,7 +20,7 @@
 	/* #endregion */
 
 	.menu {
-		@apply flex flex-col gap-2 text-gray-900 [&>li:hover]:bg-gray-100 [&>li]:rounded-lg [&>li]:p-3;
+		@apply flex flex-col gap-2 text-gray-900 [&>li:hover]:bg-gray-200 [&>li]:rounded-lg [&>li]:p-3;
 	}
 	.menu li {
 		@apply cursor-pointer focus:active:text-indigo-500;
@@ -44,10 +44,10 @@
 		@apply btn ring-0 hover:bg-gray-200;
 	}
 	.btn-primary {
-		@apply bg-indigo-500 text-white;
+		@apply bg-indigo-500 text-white ring-0;
 	}
 	.btn-outline {
-		@apply bg-transparent text-gray-900 hover:bg-gray-900;
+		@apply bg-transparent text-gray-900 hover:bg-gray-800 hover:ring-0;
 	}
 	.btn-circle {
 		@apply rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2;

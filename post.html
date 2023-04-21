@@ -156,7 +156,7 @@
 						.map(
 							(item) => /* html */ `
 				<li
-					class="sm:h-12 ${params.get("page") === item.title ? "menu-item nav-link-active" : "menu-item"}"
+					class="sm:h-12 ${params.get("page") === item.title ? "menu-item bg-gray-200 text-gray-900" : "menu-item"}"
 					data-page="${item.title}"
 				>
 				<a href="">${item.title}</a></li>`
