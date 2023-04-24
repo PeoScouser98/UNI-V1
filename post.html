@@ -61,7 +61,7 @@
 				>
 					<div class="invisible-scroll h-auto w-full p-2 sm:my-6 sm:overflow-x-auto md:my-6 md:overflow-x-auto">
 						<ul
-							class="menu menu-vertical sm:menu-horizontal md:menu-horizontal gap-1 font-clash text-xl font-medium text-zinc-400 sm:text-base"
+							class="menu gap-1 font-clash text-xl font-medium text-zinc-400 sm:flex-row sm:text-base md:flex-row"
 							id="nav-link"
 						></ul>
 					</div>
@@ -156,10 +156,14 @@
 						.map(
 							(item) => /* html */ `
 				<li
-					class="sm:h-12 ${params.get("page") === item.title ? "menu-item bg-gray-200 text-gray-900" : "menu-item"}"
+					class="sm:h-12 ${
+						params.get("page") === item.title
+							? "text-gray-900 xl:border-l-4 sm:border-b-2 md:border-b-4 border-indigo-500"
+							: "menu-item"
+					}"
 					data-page="${item.title}"
 				>
-				<a href="">${item.title}</a></li>`
+				<a href="" class="block">${item.title}</a></li>`
 						)
 						.join("");
 				}

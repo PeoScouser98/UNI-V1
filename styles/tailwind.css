@@ -20,9 +20,9 @@
 	/* #endregion */
 
 	.menu {
-		@apply flex flex-col gap-2 text-gray-900 [&>li:hover]:bg-gray-200 [&>li]:rounded-lg [&>li]:p-3;
+		@apply flex flex-col gap-2 text-gray-900 [&>li:hover]:bg-gray-200 [&>li]:p-3;
 	}
-	.menu li {
+	.menu > * {
 		@apply cursor-pointer focus:active:text-indigo-500;
 	}
 	.table {
